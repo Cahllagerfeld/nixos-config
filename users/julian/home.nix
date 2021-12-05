@@ -18,12 +18,11 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
-  home.packages = with pkgs; [
-    vscode
-    nodejs-16_x
-  ];
   
+  imports = [
+    ./packages.nix
+  ];
+
   programs.zsh = {
     enable = true;
     oh-my-zsh = {
