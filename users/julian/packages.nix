@@ -5,6 +5,7 @@
     spotify
     discord
     slack
+    ksshaskpass
     nodejs-16_x
   ];
 }
